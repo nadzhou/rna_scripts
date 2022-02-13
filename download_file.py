@@ -10,7 +10,7 @@ def main():
         download_data(link)
 
 
-def get_links(files):
+def get_links(file):
     with open(file, "r") as file:
         data = file.read()
 
@@ -20,7 +20,7 @@ def get_links(files):
 def download_data(url):
     command = url.split()
     command.insert(0, "wget")
-    r = subprocess.Popen(command, shell=True)
+    r = subprocess.Popen(command)
     r.communicate()
 
 

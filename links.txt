@@ -1,0 +1,2 @@
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR385/001/ERR3852431/ERR3852431.fastq.gz
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR385/002/ERR3852432/ERR3852432.fastq.gz
