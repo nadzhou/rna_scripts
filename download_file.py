@@ -9,11 +9,13 @@ def main():
     for link in links:
         download_data(link)
 
+
 def get_links(files):
     with open(file, "r") as file:
         data = file.read()
 
     return data.split()
+
 
 def download_data(url):
     command = url.split()
