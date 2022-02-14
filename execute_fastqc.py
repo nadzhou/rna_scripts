@@ -8,6 +8,7 @@ def main():
         print(file)
         execute_fastqc(file)
 
+
 def execute_fastqc(file):
     command = f"fastqc {file}"
     command = command.split()
