@@ -3,8 +3,8 @@ from pathlib import Path
 
 
 def main():
-    dir = Path('sequences')
-    for file in dir.rglob('*.fastq.gz'):
+    dir = Path('/mnt/d/testing_trimomatic')
+    for file in dir.rglob('*.fq.gz'):
         print(file)
         execute_fastqc(file)
 
