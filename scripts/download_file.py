@@ -21,7 +21,8 @@ def download_data(url):
     command = url.split()
     command.insert(0, "wget")
     r = subprocess.Popen(command)
-    r.communicate()
+    (out, err) = r.communicate()
+    return out
 
 
 if __name__ == "__main__":
