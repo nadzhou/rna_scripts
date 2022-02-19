@@ -14,7 +14,8 @@ def execute_fastqc(file):
     command = command.split()
     print(command)
     r = subprocess.Popen(command)
-    r.communicate()
+    (out, err) = r.communicate()
+    return out
 
 
 if __name__ == '__main__':
